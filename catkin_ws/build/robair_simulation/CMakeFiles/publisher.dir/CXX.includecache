@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/laguerre/catkin_ws/devel/include/robair_simulation/collision_event.h
+/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/devel/include/robair_simulation/collision_event.h
 string
 -
 vector
@@ -22,13 +22,13 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/laguerre/catkin_ws/src/robair_simulation/src/publisher.cpp
+/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/src/robair_simulation/src/publisher.cpp
 ros/ros.h
-/home/laguerre/catkin_ws/src/robair_simulation/src/ros/ros.h
+/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/src/robair_simulation/src/ros/ros.h
 std_msgs/String.h
-/home/laguerre/catkin_ws/src/robair_simulation/src/std_msgs/String.h
+/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/src/robair_simulation/src/std_msgs/String.h
 robair_simulation/collision_event.h
-/home/laguerre/catkin_ws/src/robair_simulation/src/robair_simulation/collision_event.h
+/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/src/robair_simulation/src/robair_simulation/collision_event.h
 iostream
 -
 
