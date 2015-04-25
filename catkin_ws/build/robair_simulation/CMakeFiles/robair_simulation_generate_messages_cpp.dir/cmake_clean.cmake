@@ -1,6 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/robair_simulation_generate_messages_cpp"
-  "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/devel/include/robair_simulation/collision_event.h"
+  "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/devel/include/robair_simulation/collision_event.h"
+  "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/devel/include/robair_simulation/panic_event.h"
 )
 
 # Per-language clean rules from dependency scanning.

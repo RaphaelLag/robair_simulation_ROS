@@ -1,8 +1,8 @@
-prefix=/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/install
+prefix=/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/install
 
 Name: robair_simulation
 Description: Description of robair_simulation
 Version: 0.0.0
-Cflags: -I/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/install/include
-Libs: -L/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/install/lib 
+Cflags: -I/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/install/include
+Libs: -L/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/install/lib 
 Requires: message_runtime roscpp rospy std_msgs

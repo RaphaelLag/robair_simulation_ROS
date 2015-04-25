@@ -3,5 +3,7 @@
   (:export
    "<COLLISION_EVENT>"
    "COLLISION_EVENT"
+   "<PANIC_EVENT>"
+   "PANIC_EVENT"
   ))
 

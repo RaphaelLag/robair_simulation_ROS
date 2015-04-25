@@ -1,2 +1,2 @@
 robair_simulation
--DCATKIN_DEVEL_PREFIX=/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/install -G Unix Makefiles

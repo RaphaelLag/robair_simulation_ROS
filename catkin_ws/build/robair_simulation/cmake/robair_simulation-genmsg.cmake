@@ -1,8 +1,8 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "robair_simulation: 1 messages, 0 services")
+message(STATUS "robair_simulation: 2 messages, 0 services")
 
-set(MSG_I_FLAGS "-Irobair_simulation:/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Irobair_simulation:/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -15,9 +15,14 @@ add_custom_target(robair_simulation_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/collision_event.msg" NAME_WE)
+get_filename_component(_filename "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/collision_event.msg" NAME_WE)
 add_custom_target(_robair_simulation_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robair_simulation" "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/collision_event.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robair_simulation" "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/collision_event.msg" ""
+)
+
+get_filename_component(_filename "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/panic_event.msg" NAME_WE)
+add_custom_target(_robair_simulation_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robair_simulation" "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/panic_event.msg" ""
 )
 
 #
@@ -27,7 +32,13 @@ add_custom_target(_robair_simulation_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(robair_simulation
-  "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/collision_event.msg"
+  "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/collision_event.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robair_simulation
+)
+_generate_msg_cpp(robair_simulation
+  "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/panic_event.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robair_simulation
@@ -47,7 +58,9 @@ add_custom_target(robair_simulation_generate_messages_cpp
 add_dependencies(robair_simulation_generate_messages robair_simulation_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/collision_event.msg" NAME_WE)
+get_filename_component(_filename "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/collision_event.msg" NAME_WE)
+add_dependencies(robair_simulation_generate_messages_cpp _robair_simulation_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/panic_event.msg" NAME_WE)
 add_dependencies(robair_simulation_generate_messages_cpp _robair_simulation_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -60,7 +73,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS robair_simulation_generate_messages
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(robair_simulation
-  "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/collision_event.msg"
+  "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/collision_event.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robair_simulation
+)
+_generate_msg_lisp(robair_simulation
+  "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/panic_event.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robair_simulation
@@ -80,7 +99,9 @@ add_custom_target(robair_simulation_generate_messages_lisp
 add_dependencies(robair_simulation_generate_messages robair_simulation_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/collision_event.msg" NAME_WE)
+get_filename_component(_filename "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/collision_event.msg" NAME_WE)
+add_dependencies(robair_simulation_generate_messages_lisp _robair_simulation_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/panic_event.msg" NAME_WE)
 add_dependencies(robair_simulation_generate_messages_lisp _robair_simulation_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -93,7 +114,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS robair_simulation_generate_messages
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(robair_simulation
-  "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/collision_event.msg"
+  "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/collision_event.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robair_simulation
+)
+_generate_msg_py(robair_simulation
+  "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/panic_event.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robair_simulation
@@ -113,7 +140,9 @@ add_custom_target(robair_simulation_generate_messages_py
 add_dependencies(robair_simulation_generate_messages robair_simulation_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/collision_event.msg" NAME_WE)
+get_filename_component(_filename "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/collision_event.msg" NAME_WE)
+add_dependencies(robair_simulation_generate_messages_py _robair_simulation_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/laguerre/Documents/ENSIMAG/S4/fablab/robair_simulation_ROS/catkin_ws/src/robair_simulation/msg/panic_event.msg" NAME_WE)
 add_dependencies(robair_simulation_generate_messages_py _robair_simulation_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
