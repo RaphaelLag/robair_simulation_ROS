@@ -48,7 +48,8 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
 	FILES
 	collision_event.msg
-	panic_event.msg
+	#panic_event.msg
+	battery_level.msg
 	)
 
 ## Generate services in the 'srv' folder
@@ -166,9 +167,9 @@ include_directories(
 
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(pub_collision src/pub_collision.cpp)
-add_executable(pub_panic_event src/pub_panic_event.cpp)
-target_link_libraries(pub_collision ${catkin_LIBRARIES})
-target_link_libraries(pub_panic_event ${catkin_LIBRARIES})
-add_dependencies(pub_collision robair_simulation_generate_messages_cpp)
-add_dependencies(pub_panic_event robair_simulation_generate_messages_cpp)
+#add_executable(pub_collision src/pub_collision.cpp)
+#add_executable(pub_panic_event src/pub_panic_event.cpp)
+#target_link_libraries(pub_collision ${catkin_LIBRARIES})
+#target_link_libraries(pub_panic_event ${catkin_LIBRARIES})
+#add_dependencies(pub_collision robair_simulation_generate_messages_cpp)
+#add_dependencies(pub_panic_event robair_simulation_generate_messages_cpp)

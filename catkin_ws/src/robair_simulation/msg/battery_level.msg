@@ -1,0 +1,2 @@
+char battery_level
+
